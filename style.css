@@ -10,7 +10,7 @@ body {
   height: 100vh;
   background: #131221;
 }
-.container {
+.container,.overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,15 +19,18 @@ body {
   position: relative;
   height: 450px;
   width: 350px;
-  background: #000;
+  background: #fff;
   border-radius: 16px;
   overflow: hidden;
+}
+.container.active{
+    background: #000;
 }
 .container::before {
   content: "";
   position: absolute;
-  height: 550px;
-  width: 550px;
+  height: 650px;
+  width: 650px;
   background: conic-gradient(transparent,transparent,transparent,#fff);
 }
 
@@ -44,6 +47,9 @@ body {
 }
 .overlay{
     position: absolute;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
     height: 440px;
     width: 340px;
     border-radius: 12px;

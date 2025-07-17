@@ -21,6 +21,7 @@ body {
   width: 350px;
   background: #000;
   border-radius: 16px;
+  overflow: hidden;
 }
 .container::before {
   content: "";
@@ -40,4 +41,11 @@ body {
     100%{
         transform: rotate(360deg);
     }
+}
+.overlay{
+    position: absolute;
+    height: 440px;
+    width: 340px;
+    border-radius: 12px;
+    background: #131221;
 }
